@@ -1,0 +1,21 @@
+﻿<Window x:Class="App_Iron.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_Iron"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="493" Width="873">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Log-In" HorizontalAlignment="Left" Margin="244,78,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Bahnschrift"/>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Margin="183,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="36" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Username :" HorizontalAlignment="Left" Margin="63,154,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.56" FontFamily="Bahnschrift" FontSize="16"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="67,226,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="16"/>
+        <Button x:Name="btnlogin" Content="Log In" HorizontalAlignment="Left" Margin="272,338,0,0" VerticalAlignment="Top" Height="53" Width="90" FontFamily="Bahnschrift" FontSize="22" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+        <PasswordBox x:Name="pwbpassword" HorizontalAlignment="Left" Margin="183,226,0,0" VerticalAlignment="Top" Width="268" Height="36"/>
+        <Button x:Name="btnExist" Content="EXSIT" HorizontalAlignment="Left" Margin="554,241,0,0" VerticalAlignment="Top" Height="38" Width="265" FontSize="16" Background="#FFF49191" FontFamily="Bahnschrift"/>
+        <Button x:Name="btnTest" Content="Test" HorizontalAlignment="Left" Margin="554,169,0,0" VerticalAlignment="Top" FontSize="16" Height="38" Width="265" FontFamily="Bahnschrift" Click="btnTest_Click"/>
+        <Button x:Name="btnMachsetting" Content=" Machine Setting" HorizontalAlignment="Left" Margin="554,97,0,0" VerticalAlignment="Top" Height="41" Width="263" FontSize="16" FontFamily="Bahnschrift" Click="btnMachsetting_Click"/>
+
+    </Grid>
+</Window>

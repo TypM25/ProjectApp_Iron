@@ -1,0 +1,45 @@
+﻿<Window x:Class="App_Iron.Test_page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_Iron"
+        mc:Ignorable="d"
+        Title="Test_page" Height="450" Width="675">
+    <Grid Margin="0,0,0,-6" Background="#FFBBB6B6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254*"/>
+            <ColumnDefinition Width="421*"/>
+
+        </Grid.ColumnDefinitions>
+        <Label Content="Time Limit :" HorizontalAlignment="Left" Margin="3,101,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Height="24" Width="72" Grid.Column="1"/>
+        <TextBox x:Name="txtTimeLimit" HorizontalAlignment="Left" Margin="71,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Label Content="Time :" HorizontalAlignment="Left" Margin="22,129,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Grid.Column="1" Height="24" Width="41"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Margin="71,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Button x:Name="btnStartqc" Content="StartQC" HorizontalAlignment="Left" Margin="279,240,0,0" VerticalAlignment="Top" Height="63" Width="126" Background="#FFCBFFE1" Click="btnStartqc_Click" FontFamily="Bahnschrift" FontSize="16" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Label Content="Temp 1 :" HorizontalAlignment="Left" Margin="50,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.132,0.554" FontFamily="Bahnschrift" Height="24" Width="52"/>
+        <Label Content="Temp Limit :" HorizontalAlignment="Left" Margin="27,97,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Height="24" Width="75"/>
+        <TextBox x:Name="txtTemp1" HorizontalAlignment="Left" Margin="115,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtTempLimit" HorizontalAlignment="Left" Margin="115,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Height="16"/>
+        <Label Content="Current :" HorizontalAlignment="Left" Margin="237,129,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Grid.Column="1" Height="24" Width="57"/>
+        <Label Content="Current Limit :" HorizontalAlignment="Left" Margin="209,101,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Grid.Column="1" Height="24" Width="88"/>
+        <TextBox x:Name="txtCurrent" HorizontalAlignment="Left" Margin="299,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <TextBox x:Name="txtCurrentLimit" HorizontalAlignment="Left" Margin="299,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1" Height="16"/>
+        <ComboBox x:Name="cmbPortNames" HorizontalAlignment="Left" Margin="279,202,0,0" VerticalAlignment="Top" Width="120" Loaded="ComboBox_Loaded" RenderTransformOrigin="0.5,0.5" FontFamily="Bahnschrift" FontSize="16" Grid.Column="1" Height="25"/>
+        <Label Content="PORT :" HorizontalAlignment="Left" Margin="279,169,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="14" Grid.Column="1" Height="27" Width="50"/>
+        <Label Content="Username :" HorizontalAlignment="Left" Margin="56,25,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Height="24" Width="71"/>
+        <TextBox x:Name="txtTempLimit_Copy" HorizontalAlignment="Left" Margin="132,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Height="16"/>
+        <Label Content="Name of product :" HorizontalAlignment="Left" Margin="22,54,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Height="24" Width="105"/>
+        <TextBox x:Name="txtTempLimit_Copy1" HorizontalAlignment="Left" Margin="132,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Height="16"/>
+        <Label Content="Machine number :" HorizontalAlignment="Left" Margin="91,25,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Grid.Column="1" Height="24" Width="105"/>
+        <Label Content="Serial number :" HorizontalAlignment="Left" Margin="104,54,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" Grid.Column="1" Height="24" Width="93"/>
+        <TextBox x:Name="txtTempLimit_Copy3" HorizontalAlignment="Left" Margin="209,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1" Height="16"/>
+        <TextBox x:Name="txtTempLimit_Copy2" HorizontalAlignment="Left" Margin="209,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontFamily="Bahnschrift" BorderBrush="{x:Null}" Grid.Column="1" Height="16"/>
+        <TextBox x:Name="txtTemp2" HorizontalAlignment="Left" Margin="115,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtTemp3" HorizontalAlignment="Left" Margin="115,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="17" FontFamily="Bahnschrift" BorderBrush="{x:Null}"/>
+        <Label Content="Temp 2 :" HorizontalAlignment="Left" Margin="48,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.132,0.554" FontFamily="Bahnschrift" Height="24" Width="54"/>
+        <Label Content="Temp 3 :" HorizontalAlignment="Left" Margin="48,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.132,0.554" FontFamily="Bahnschrift" Height="24" Width="54"/>
+        <Button x:Name="btnSarub" Grid.Column="1" Content="Sarub" HorizontalAlignment="Left" Margin="297,364,0,0" VerticalAlignment="Top" Click="btnSarub_Click" Height="27" Width="45"/>
+        <DataGrid x:Name="dtgTable" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="56,254,211,33" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
