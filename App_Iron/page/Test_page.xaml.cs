@@ -145,9 +145,8 @@ namespace App_Iron
             string data = _serialPort?.ReadLine() ?? string.Empty;
             string[] values = data.Split(',');
 
-            if (values.Length == 9)
+            if (values.Length >= 8)  // Ensure there are enough values
             {
-                // Update UI
                 Dispatcher.Invoke(() =>
                 {
                     txtTemp1.Text = values[0];
@@ -178,6 +177,7 @@ namespace App_Iron
                         }
                         Center.closeConnection();
                     }
+
                 });
             }
 
